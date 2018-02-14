@@ -22,6 +22,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   variables:
   statement_timeout: 5000
+  password: <%= ENV['DEV_DATABASE_PASSWORD'] %>
 development:
   <<: *default
   database: railstest_development

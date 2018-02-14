@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @post.title %><span style="font-weight: normal"> by <%= link_to @post.user.name, @post.user %></span></h2>
+<p><%= @post.content %></p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
